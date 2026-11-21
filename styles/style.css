@@ -187,4 +187,82 @@ footer {
     .collections-grid {
         grid-template-columns: 1fr;
     }
+  }
+/* Membership Page Styling */
+
+.membership-page {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.membership-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.membership-intro h2 {
+  color: #5a3e2b;
+  margin-bottom: 0.5rem;
+}
+
+.membership-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.membership-card {
+  background: #fff;
+  border: 1px solid #d8cfc4;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.membership-card.featured-plan {
+  border: 2px solid #5a3e2b;
+}
+
+.membership-card h3 {
+  color: #5a3e2b;
+  margin-bottom: 0.5rem;
+}
+
+.membership-price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #8b6b4a;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #eee6dc;
+}
+
+.membership-card ul,
+.membership-rules ul {
+  padding-left: 1.2rem;
+}
+
+.membership-card li,
+.membership-rules li {
+  margin-bottom: 0.5rem;
+}
+
+.membership-rules {
+  background: #fff;
+  border-left: 4px solid #5a3e2b;
+  border-radius: 6px;
+  padding: 1.5rem;
+}
+
+.membership-rules h3 {
+  color: #5a3e2b;
+  margin-bottom: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .membership-grid {
+    grid-template-columns: 1fr;
+  }
 }
